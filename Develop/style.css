@@ -2,6 +2,7 @@ body {
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
   line-height: 1;
+  background-color: teal;
 }
 
 textarea{
@@ -70,5 +71,11 @@ textarea{
   transition: all .3s ease-in-out;
 }
 .Time {
-  color: green
+  color: black;
+  text-align: center;
+  font-weight: bold;
+}
+
+.textBox {
+  width: 800px;
 }
