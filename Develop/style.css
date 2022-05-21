@@ -79,3 +79,8 @@ textarea{
 .textBox {
   width: 800px;
 }
+
+.lead {
+  font-weight: bold;
+  color: red;
+}
