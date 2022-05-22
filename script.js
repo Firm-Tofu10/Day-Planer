@@ -14,9 +14,16 @@ $("#currentDay").text(moment().format('MMMM Do YYYY, h:mm:ss a'));
    console.log(userplan,currenthour);
    localStorage.setItem(currenthour,userplan);
  })
-
+ var currentHour = moment().hours()
  for (let i = 6; i < 25; i++) {
    $("#"+ i).siblings(".textBox").val(localStorage.getItem(i))
+   if(i<currentHour){
+    $("#"+ i).siblings(".textBox").addClass("bg-danger")
+   }else if(i == currentHour) {
+    $("#"+ i).siblings(".textBox").addClass("bg-warning")
+   }else{
+    $("#"+ i).siblings(".textBox").addClass("bg-primary")
+   }
  };
 
  $( function() {
