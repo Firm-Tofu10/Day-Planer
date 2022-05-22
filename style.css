@@ -88,3 +88,11 @@ input{
   font-weight: bold;
   color: black;
 }
+
+.Fix {
+  right: 200px;
+} /*Could not figure out how to center the two diget times i tryed a couple diffrent classes and ids for html none seem to work?*/
+
+.Phrase {
+  color: yellowgreen;
+}
