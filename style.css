@@ -14,8 +14,8 @@ input{
   padding: 10px;
 }
 
-space{
-  min-width: 20px;
+.space{
+  left: 400px;
 }
 
 .jumbotron {
@@ -86,5 +86,5 @@ space{
 
 .lead {
   font-weight: bold;
-  color: red;
+  color: black;
 }

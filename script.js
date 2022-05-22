@@ -20,7 +20,7 @@ $("#currentDay").text(moment().format('MMMM Do YYYY, h:mm:ss a'));
    if(i<currentHour){
     $("#"+ i).siblings(".textBox").addClass("bg-danger")
    }else if(i == currentHour) {
-    $("#"+ i).siblings(".textBox").addClass("bg-warning")
+    $("#"+ i).siblings(".textBox").addClass("bg-success")
    }else{
     $("#"+ i).siblings(".textBox").addClass("bg-primary")
    }
