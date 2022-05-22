@@ -4,7 +4,7 @@
 
 // document.getElementById("currentDay").textContent = date;
  setInterval(function(){
-$("#currentDay").textContent = moment().format('MMMM Do YYYY, h:mm:ss a');
+$("#currentDay").text(moment().format('MMMM Do YYYY, h:mm:ss a'));
  },1000);
 
 
@@ -16,7 +16,6 @@ $("#currentDay").textContent = moment().format('MMMM Do YYYY, h:mm:ss a');
  })
 
  for (let i = 6; i < 25; i++) {
-   console.log(localStorage.getItem(i))
    $("#"+ i).siblings(".textBox").val(localStorage.getItem(i))
  };
 
