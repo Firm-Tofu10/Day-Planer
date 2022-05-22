@@ -12,7 +12,13 @@ $("#currentDay").textContent = moment().format('MMMM Do YYYY, h:mm:ss a');
    var userplan = $(this).siblings(".textBox").val()
    var currenthour = $(this).attr("id");
    console.log(userplan,currenthour);
+   localStorage.setItem(currenthour,userplan);
  })
+
+ for (let i = 6; i < 25; i++) {
+   console.log(localStorage.getItem(i))
+   $("#"+ i).siblings(".textBox").val(localStorage.getItem(i))
+ };
 
  $( function() {
     $( "#sortable" ).sortable();
