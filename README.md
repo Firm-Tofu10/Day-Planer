@@ -1,7 +1,7 @@
 # Work Day Scheduler Starter Code
 Bryson Benson
 date of finished product- 5/21/2022
-live URL:file:///C:/Users/bryso/Documents/GitHub/Day-Planer/index.html
+live URL:https://firm-tofu10.github.io/Day-Planer/
 
 This project was created using some provided starter code in the CSS and HTML however most od this was for style or linking Jquery,Bootstrap, and movment.js. (All the Javascript code was added to this project that was not an API call.)
 
