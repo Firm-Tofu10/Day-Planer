@@ -18,88 +18,104 @@
     <h1 class="display-3">Work Day Scheduler</h1>
     <p class="Phrase">This app helps plan your current work day.</p>
     <p id="currentDay" class="lead">Current Day</p>
-
   </header>
   <div class="container">
-    <!-- Timeblocks go here -->
-      <div id="6AM" class="Time">
-        6:00AM  <input class="textBox" type="text"> 
-        <button id="6" class="btn btn-warning Time">Save</button>
-      </div>
-      <div id="7AM" class="Time">
-        7:00AM  <input class="textBox" type="text"> 
-        <button id="7" class="btn btn-warning Time">Save</button>
-      </div>
-      <div id="8AM" class="Time">
-        8:00AM  <input class="textBox" type="text"> 
-        <button id="8" class="btn btn-warning Time">Save</button>
-      </div>
-      <div id="9AM" class="Time">
-        9:00AM  <input class="textBox" type="text"> 
-        <button id="9" class="btn btn-warning Time">Save</button>
-      </div>
-      <div id="Fix" class="Time">
-        <span>10:00AM</span>  <input class="textBox" type="text"> 
-        <button id="10" class="btn btn-warning Time">Save</button>
-      </div>
-      <div id="Fix" class="Time">
-        <span>11:00AM</span>  <input class="textBox" type="text"> 
-        <button id="11" class="btn btn-warning Time">Save</button>
-      </div>
-      <div id="Fix" class="Time">
-       <span>12:00PM </span> <input class="textBox" type="text"> 
-        <button id="12" class="btn btn-warning Time">Save</button>
-      </div>
-      <div id="1PM" class="Time">
-        1:00PM  <input class="textBox" type="text"> 
-        <button id="13" class="btn btn-warning Time">Save</button>
-      </div>
-      <div id="2PM" class="Time">
-        2:00PM  <input class="textBox" type="text"> 
-        <button id="14"class="btn btn-warning Time">Save</button>
-      </div>
-      <div id="3PM" class="Time">
-        3:00PM  <input class="textBox" type="text"> 
-        <button id="15" class="btn btn-warning Time">Save</button>
-      </div>
-      <div id="4PM" class="Time">
-        4:00PM  <input class="textBox" type="text"> 
-        <button id="16" class="btn btn-warning Time">Save</button>
-      </div>
-      <div id="5PM" class="Time">
-        5:00PM  <input class="textBox" type="text"> 
-        <button id="17" class="btn btn-warning Time">Save</button>
-      </div>
-      <div id="6PM" class="Time">
-        6:00PM  <input class="textBox" type="text"> 
-        <button id="18" class="btn btn-warning Time">Save</button>
-      </div>
-      <div id="7PM" class="Time">
-        7:00PM  <input class="textBox" type="text"> 
-        <button id="19" class="btn btn-warning Time">Save</button>
-      </div>
-      <div id="8PM" class="Time">
-        8:00PM  <input class="textBox" id="20-text" type="text"> 
-        <button id="20" class="btn btn-warning Time">Save</button>
-      </div>
-      <div id="9PM" class="Time">
-        9:00PM  <input class="textBox" type="text"> 
-        <button id="21" class="btn btn-warning Time">Save</button>
-      </div>
-      <div id="Fix" class="Time">
-        10:00PM  <input class="textBox" type="text"> 
-        <button id="22" class="btn btn-warning Time">Save</button>
-      </div>
-      <div id="Fix" class="Time">
-        11:00PM  <input class="textBox" type="text"> 
-        <button id="23" class="btn btn-warning Time">Save</button>
-      </div>
-      <div id="Fix" class="Time">
-        12:00AM  <input class="textBox" type="text">
-        <button id="24" class="btn btn-warning Time">Save</button>
-      </div> <!--This is the main list of times and tasks along with their ids and classes being called by the .JS file to update your work day plan as needed. -->
+    <div id="6AM" class="time-block past">
+      <span class="time-label">6:00AM</span>
+      <input class="textBox" type="text">
+      <button id="6" class="btn saveBtn">Save</button>
+    </div>
+    <div id="7AM" class="time-block past">
+      <span class="time-label">7:00AM</span>
+      <input class="textBox" type="text">
+      <button id="7" class="btn saveBtn">Save</button>
+    </div>
+    <div id="8AM" class="time-block past">
+      <span class="time-label">8:00AM</span>
+      <input class="textBox" type="text">
+      <button id="8" class="btn saveBtn">Save</button>
+    </div>
+    <div id="9AM" class="time-block past">
+      <span class="time-label">9:00AM</span>
+      <input class="textBox" type="text">
+      <button id="9" class="btn saveBtn">Save</button>
+    </div>
+    <div id="10AM" class="time-block">
+      <span class="time-label">10:00AM</span>
+      <input class="textBox" type="text">
+      <button id="10" class="btn saveBtn">Save</button>
+    </div>
+    <div id="11AM" class="time-block">
+      <span class="time-label">11:00AM</span>
+      <input class="textBox" type="text">
+      <button id="11" class="btn saveBtn">Save</button>
+    </div>
+    <div id="12PM" class="time-block">
+      <span class="time-label">12:00PM</span>
+      <input class="textBox" type="text">
+      <button id="12" class="btn saveBtn">Save</button>
+    </div>
+    <div id="1PM" class="time-block future">
+      <span class="time-label">1:00PM</span>
+      <input class="textBox" type="text">
+      <button id="13" class="btn saveBtn">Save</button>
+    </div>
+    <div id="2PM" class="time-block future">
+      <span class="time-label">2:00PM</span>
+      <input class="textBox" type="text">
+      <button id="14" class="btn saveBtn">Save</button>
+    </div>
+    <div id="3PM" class="time-block future">
+      <span class="time-label">3:00PM</span>
+      <input class="textBox" type="text">
+      <button id="15" class="btn saveBtn">Save</button>
+    </div>
+    <div id="4PM" class="time-block future">
+      <span class="time-label">4:00PM</span>
+      <input class="textBox" type="text">
+      <button id="16" class="btn saveBtn">Save</button>
+    </div>
+    <div id="5PM" class="time-block future">
+      <span class="time-label">5:00PM</span>
+      <input class="textBox" type="text">
+      <button id="17" class="btn saveBtn">Save</button>
+    </div>
+    <div id="6PM" class="time-block future">
+      <span class="time-label">6:00PM</span>
+      <input class="textBox" type="text">
+      <button id="18" class="btn saveBtn">Save</button>
+    </div>
+    <div id="7PM" class="time-block future">
+      <span class="time-label">7:00PM</span>
+      <input class="textBox" type="text">
+      <button id="19" class="btn saveBtn">Save</button>
+    </div>
+    <div id="8PM" class="time-block future">
+      <span class="time-label">8:00PM</span>
+      <input class="textBox" type="text">
+      <button id="20" class="btn saveBtn">Save</button>
+    </div>
+    <div id="9PM" class="time-block future">
+      <span class="time-label">9:00PM</span>
+      <input class="textBox" type="text">
+      <button id="21" class="btn saveBtn">Save</button>
+    </div>
+    <div id="10PM" class="time-block future">
+      <span class="time-label">10:00PM</span>
+      <input class="textBox" type="text">
+      <button id="22" class="btn saveBtn">Save</button>
+    </div>
+    <div id="11PM" class="time-block future">
+      <span class="time-label">11:00PM</span>
+      <input class="textBox" type="text">
+      <button id="23" class="btn saveBtn">Save</button>
+    </div>
+    <div id="12AM" class="time-block future">
+      <span class="time-label">12:00AM</span>
+      <input class="textBox" type="text">
+      <button id="24" class="btn saveBtn">Save</button>
+    </div>
   </div>
-
 
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
