@@ -38,7 +38,8 @@ body {
 
 .time-block .textBox {
   flex: 1; /* Takes up remaining space in the row */
-  margin: 0 10px; /* Margin between text box and buttons */
+  margin: 0 10px; /* Margin between text box and buttons
+  font-weight: bold; */
 }
 
 .time-block .saveBtn {
@@ -47,6 +48,7 @@ body {
   background-color: #d1d506;
   color: swhite;
   border: 1px solid black;
+  font-weight: bold;
 }
 
 .time-label {
@@ -61,17 +63,19 @@ body {
 
 .present .textBox {
   background-color: #ff6961;
-  color: white;
+  color: black;
+  font-weight: bold;
 }
 
 .future .textBox {
   background-color: #77dd77;
-  color: white;
+  color: black;
 }
 
 .saveBtn:hover {
   font-size: 20px;
   transition: all .3s ease-in-out;
+  font-weight: bold;
 }
 
 .lead {
@@ -81,6 +85,7 @@ body {
 
 .Phrase {
   color: yellowgreen;
+  font-weight: bold;
 }
 
 /* Optional: Adjustments for specific time blocks */
