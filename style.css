@@ -1,21 +1,14 @@
 body {
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
-  line-height: 1;
+  line-height: 1.5; /* Improved line-height for readability */
   background-color: teal;
+  margin: 0; /* Remove default body margin */
 }
 
-input{
-  background: transparent;
-  border: none;
-  resize: none;
-  color: #000000;
-  border-left: 1px solid black;
-  padding: 10px;
-}
-
-.space{
-  left: 400px;
+.container {
+  max-width: 800px; /* Constrain width of container for centering */
+  margin: 0 auto; /* Center container horizontally */
 }
 
 .jumbotron {
@@ -24,64 +17,60 @@ input{
   color: black;
   border-radius: 0;
   border-bottom: 10px solid black;
+  margin-bottom: 30px; /* Adds spacing below the header */
 }
 
-.description{
+.description {
   white-space: pre-wrap;
 }
 
-.time-block{
-  text-align: center;
+.time-block {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Adjusts spacing between time and input */
   border-radius: 15px;
+  padding: 10px;
+  margin-bottom: 10px; /* Spacing between rows */
+  background-color: #ffffff; /* Background color for each time block */
+  border-top: 1px dashed #000000; /* Border style for each block */
 }
 
-.row {
-  white-space: pre-wrap;
-  height: 80px;
-  border-top: 1px solid white;;
+.time-block .textBox {
+  flex: 1; /* Takes up remaining space in the row */
+  margin: 0 10px; /* Margin between text box and buttons */
 }
 
-.hour {
-  background-color: #ffffff;
-  color: #000000;
-  border-top: 1px dashed #000000;
-}
-
-.past {
-  background-color: #d3d3d3;
+.time-block .saveBtn {
+  margin-left: 10px; /* Space between input and button */
+  border-radius: 15px;
+  background-color: #06AED5;
   color: white;
+  border: 1px solid black;
 }
 
-.present {
+.time-label {
+  text-align: center;
+  font-size: 1.2em; /* Adjust size as needed */
+}
+
+.past .textBox {
+  background-color: #d3d3d3;
+  color: black; /* Adjust color for better readability */
+}
+
+.present .textBox {
   background-color: #ff6961;
   color: white;
 }
 
-.future {
+.future .textBox {
   background-color: #77dd77;
   color: white;
 }
 
-.saveBtn {
-  border-left: 1px solid black;
-  border-top-right-radius: 15px;
-  border-bottom-right-radius: 15px;
-  background-color: #06AED5;
-  color: white;
-}
-
-.saveBtn i:hover {
+.saveBtn:hover {
   font-size: 20px;
   transition: all .3s ease-in-out;
-}
-.Time {
-  color: black;
-  text-align: center;
-  font-weight: bold;
-}
-
-.textBox {
-  width: 800px;
 }
 
 .lead {
@@ -89,10 +78,11 @@ input{
   color: black;
 }
 
-.Fix {
-  right: 200px;
-} /*Could not figure out how to center the two diget times i tryed a couple diffrent classes and ids for html none seem to work?*/
-
 .Phrase {
   color: yellowgreen;
+}
+
+/* Optional: Adjustments for specific time blocks */
+.Fix {
+  /* Apply additional styles if needed */
 }
