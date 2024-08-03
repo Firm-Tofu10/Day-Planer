@@ -15,6 +15,7 @@ body {
 .jumbotron {
   text-align: center;
   background-color: transparent;
+  background-color: #BBC6C8;
   color: black;
   border-radius: 0;
   border-bottom: 10px solid black;
@@ -84,7 +85,7 @@ body {
 }
 
 .Phrase {
-  color: yellowgreen;
+  color: #000000;
   font-weight: bold;
 }
 
